@@ -1,0 +1,16 @@
+genome: 'GCA_000001405.15_GRCh38_no_alt_analysis_set.fna'
+gtf: 'gencode.v33.annotation.gtf'
+tcga_juncs: 'tcga_portcullisBams/portcullis_out/3-filt/portcullis_filtered.pass.junctions.bed'
+gtex_juncs: 'gtex_portcullisbams/portcullis_out/3-filt/portcullis_filtered.pass.junctions.bed'
+tcga_gtex_juncs: 'gtex_tcga/portcullis_run/portcullis_out/3-filt/portcullis_filtered.pass.junctions.bed'
+        
+
+mikado:
+        scoring: 'mammalian_orphan.yaml'
+        mode: 'nosplit'
+        seed: '123' #do not change
+        threads : "25"
+        min_cdna : '100'
+        config_file_name: 'mkconf.yaml'
+        
+
